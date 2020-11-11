@@ -9,6 +9,8 @@ from datetime import datetime
 load_dotenv()
 account_sid = os.environ['TWILIO_ACCOUNT_SID']
 auth_token = os.environ['TWILIO_AUTH_TOKEN']
+twilio_number = os.environ['TWILIO_NUMBER']
+my_phone_number = os.environ['MY_PHONE_NUMBER']
 cg = CoinGeckoAPI()   
 client = Client()
 
@@ -19,7 +21,7 @@ def get_btc_value():
         + str(res['bitcoin']['eur']) + ' EUR' + "\n" \
         + "Ethereum current value: " + "\n" + str(res['ethereum']['usd']) + ' USD' +"\n" \
         + str(res['ethereum']['eur']) + ' EUR' + "\n"
-    send_message("whatsapp:+14155238886", "whatsapp:+33647997524", msg)
+    send_message(twilio_number, my_phone_number, msg)
 
 def send_message(from_number, dest_number, body):
     client.messages.create(body=body,
