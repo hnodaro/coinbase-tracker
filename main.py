@@ -21,6 +21,7 @@ def get_btc_value():
         + str(res['bitcoin']['eur']) + ' EUR' + "\n" \
         + "Ethereum current value: " + "\n" + str(res['ethereum']['usd']) + ' USD' +"\n" \
         + str(res['ethereum']['eur']) + ' EUR' + "\n"
+    print(msg)
     send_message(twilio_number, my_phone_number, msg)
 
 def send_message(from_number, dest_number, body):
