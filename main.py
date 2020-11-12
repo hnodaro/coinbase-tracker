@@ -30,8 +30,7 @@ def send_message(from_number, dest_number, body):
                         to=dest_number)
 
 if __name__ == "__main__":
-    schedule.every(10).seconds.do(get_btc_value)
-    #schedule.every().day.at("10:30").do(get_btc_value)
+    schedule.every().day.at("10:30").do(get_btc_value)
     while True:
         schedule.run_pending()
         time.sleep(1)
