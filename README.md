@@ -1,7 +1,7 @@
 [![Python 3.6|3.7|3.8](https://img.shields.io/badge/Python-3.6%2F3.7%2F3.8-blue.svg)] [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 # coingecko-tracker
-Get WhatsApp notifications of cryptocurrencies value from Coingecko.com. To get the notifications, you must have an account on https://www.twilio.com/. Once you get your account you have to get an Account_SID and an AUTH_TOKEN.
+Get WhatsApp notifications of cryptocurrencies value from Coingecko.com. To get the notifications, you must have an account on https://www.twilio.com/. Once you get your account you have to get an Account_SID and an AUTH_TOKEN (in the dashboard view of Twilio)
 
 ![capture coingecko tracker](https://user-images.githubusercontent.com/15652168/98995300-6a2ea880-2531-11eb-843a-aa4fa2e3900f.jpg)
 
